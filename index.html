@@ -16,12 +16,13 @@
   <body>
     <!-- Navbar for highscores and quiz time -->
     <nav class="navbar navbar-white bg-blue">
-      <span class="p5"><a href="highscores.html">High Scores</a></span>
+      <span class="p5 highScoreLink"><a href="highscores.html">High Scores</a></span>
       <div class="time"></div>
     </nav>
 
     <!-- Container -->
     <main>
+
       <!-- Div for home page -->
       <div class="home">
         <h1>Panthers Quiz Challenge!</h1>
@@ -31,13 +32,19 @@
       </div>
 
       <!-- Div for quiz questions and answers -->
-      <div class="question-space">
+      <div class="quizArea">
         <div class="quiz-questions"></div>
         <hr />
         <div class="answers"></div>
       </div>
+
       <!-- Div for end of game -->
       <div class="endOfGame"></div>
+
+      <!-- highscores -->
+      
+      <div class="high-score-div" id="highScoreSpace"></div>
+
     </main>
     <script src="script.js"></script>
   </body>
