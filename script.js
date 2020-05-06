@@ -34,7 +34,7 @@ endGame.innerHTML = "";
 welcome.style.display = "none";
 quizSpace.style.display = "flex";
 arrayReset();
-writeQuestion();
+questionRandomizer();
 }
 
 //The array of questions
@@ -75,9 +75,22 @@ start.addEventListener("click", function (setTime) {
   setTime();
 });
 
+// function for questions
+function questionRandomizer () {
+// clearing out area so more questions can appear
+questionArea.innerHTML = "";
+answerArea.innerHTML = "";
+// choosing a random question
+randomNum = Math.floor(Math.random() * questions.length);
+// adding the question to the page
+var questionh1 = document.createElement("h1");
+questionh1.textContent = questions[randomNum].question;
+questionArea.appendChild(questionh1);
+
+}
 
 // what shows at the end of the game
-function endOfGame () {
+function endOfGame() {
 
 }
 

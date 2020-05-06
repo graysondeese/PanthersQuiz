@@ -1,4 +1,4 @@
-# 04 Panthers Quiz
+# Panthers Quiz
 ****
 Lorem...
 
