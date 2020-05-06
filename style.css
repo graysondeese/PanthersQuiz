@@ -16,10 +16,22 @@ display: block;
 .start {
     background-color: blue;
     color: white;
+    border-radius: 100px;
 }
 
 .time {
     text-align: right;
+    color: white;
 }
 
+a {
+    color: white;
+}
 
+.home {
+    padding-top: 1.5%;
+}
+
+.bg-blue {
+    background-color: blue;
+}

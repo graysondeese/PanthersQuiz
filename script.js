@@ -21,6 +21,7 @@ start.addEventListener("click", function(setTime) {
         }, 1000);
       }
       setTime();
+
 // making it so questions pop up when the button is clicked
 
 })
