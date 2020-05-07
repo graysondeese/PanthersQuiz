@@ -87,8 +87,8 @@ var questionsQuiz = [
   },
   {
     question: "What year did the panthers go to their second Super Bowl",
-    answers: ["2015", "2010", "2014", "2017"],
-    correct: "2015"
+    answers: ["2016", "2010", "2014", "2017"],
+    correct: "2016"
   }
 ];
 
