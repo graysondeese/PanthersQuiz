@@ -85,6 +85,11 @@ var questionsQuiz = [
     answers: ["Ron Rivera", "John Fox", "Dom Capers", "Matt Rhule"],
     correct: "Dom Capers"
   },
+  {
+    question: "What year did the panthers go to their second Super Bowl",
+    answers: ["2015", "2010", "2014", "2017"],
+    correct: "2015"
+  }
 ];
 
 // function to reset the array so questions get removed as game progresses
