@@ -49,6 +49,41 @@ var questionsQuiz = [
     answers: ["Luke Kuechly", "Greg Olsen", "Steve Smith", "Julius Peppers"],
     correct: "Luke Kuechly"
   },
+  {
+    question: "What is the name of the Panthers' mascott?",
+    answers: ["Prowler", "Catty", "Sir Purr", "Pounce"],
+    correct: "Sir Purr"
+  },
+  {
+    question: "Which Panthers player was the first to have his jersey retired?",
+    answers: ["Julius Peppers", "Cam Newton", "Jake Delhomme", "Sam Mills"],
+    correct: "Sam Mills"
+  },
+  {
+    question: "What year did the Panthers play their first game?",
+    answers: ["1995", "1985", "1996", "1986"],
+    correct: "1995"
+  },
+  {
+    question: "Who was the Carolina Panthers' very first draft pick?",
+    answers: ["Rae Carruth", "Tre Boston", "Thomas Davis", "Kerry Collins"],
+    correct: "Kerry Collins"
+  },
+  {
+    question: "Who is the current owner of the Carolina Panthers?",
+    answers: ["David Tepper", "Jerry Richardson", "Jerry Jones", "Gayle Benson"],
+    correct: "David Tepper"
+  },
+  {
+    question: "What was the Panthers' record in their first season?",
+    answers: ["12-4", "3-13", "7-9", "5-11"],
+    correct: "7-9"
+  },
+  {
+    question: "Who was the first head coach of the Carolina Panthers?",
+    answers: ["Ron Rivera", "John Fox", "Dom Capers", "Matt Rhule"],
+    correct: "Dom Capers"
+  },
 ];
 
 // function to reset the array so questions get removed as game progresses
@@ -86,6 +121,20 @@ randomNum = Math.floor(Math.random() * questions.length);
 var questionh1 = document.createElement("h1");
 questionh1.textContent = questions[randomNum].question;
 questionArea.appendChild(questionh1);
+
+// loop for what question to add
+for(var i = 0; i < questions[randomNum].answers.length; i++){
+  var questionBtn = document.createElement("button");
+  questionBtn.classList.add("answerBtn");
+  questionBtn.textContent = questions[randomNum].answers[i];
+// checking if the answer is right
+questionBtn.addEventListener("click", answerChecker);
+answerArea.appendChild(questionBtn);
+}
+}
+
+// checking the answer
+function answerChecker() {
 
 }
 

@@ -35,3 +35,21 @@ a {
 .bg-blue {
     background-color: blue;
 }
+
+.quizArea {
+    flex-direction: column;
+    padding: 1%;
+}
+
+.answerBtn {
+    border: 2px solid;
+    margin: 1em auto;
+    padding: 1 em 0;
+    background-color: lightgreen;
+    color: black;
+    width: 25%;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    display: block;
+}
