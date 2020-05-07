@@ -15,11 +15,16 @@ The player has 30 seconds to answer as many questions as they can. Getting a que
 
 # Screenshots
 ****
-<img src="Assets/HomeScreen.PNG" width="100";></img>
+
+<img src="Assets/HomeScreen.PNG">
+
 ****
-<img src="Assets/QuestionScreen.PNG" width="100";></img>
-***
-<img src="Assets/endGame.PNG" width="100";></img>
+
+<img src="Assets/QuestionScreen.PNG">
+
+****
+
+<img src="Assets/endGame.PNG">
 
 
 
