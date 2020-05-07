@@ -28,7 +28,7 @@ if(localStorage.getItem("highScores") === null) {
 start.addEventListener("click", startGame);
 
 function startGame() {
-secondsLeft = 5;
+secondsLeft = 30;
 score = 0;
 endGame.innerHTML = "";
 welcome.style.display = "none";
@@ -45,12 +45,12 @@ var questionsQuiz = [
     correct: "Cam Newton"
   },
   {
-    q: "Who did the Panthers draft ninth overall in 2012?",
+    question: "Who did the Panthers draft ninth overall in 2012?",
     answers: ["Luke Kuechly", "Greg Olsen", "Steve Smith", "Julius Peppers"],
     correct: "Luke Kuechly"
   },
   {
-    question: "What is the name of the Panthers' mascott?",
+    question: "What is the name of the Panthers mascott?",
     answers: ["Prowler", "Catty", "Sir Purr", "Pounce"],
     correct: "Sir Purr"
   },
@@ -65,7 +65,7 @@ var questionsQuiz = [
     correct: "1995"
   },
   {
-    question: "Who was the Carolina Panthers' very first draft pick?",
+    question: "Who was the Carolina Panthers very first draft pick?",
     answers: ["Rae Carruth", "Tre Boston", "Thomas Davis", "Kerry Collins"],
     correct: "Kerry Collins"
   },
@@ -75,7 +75,7 @@ var questionsQuiz = [
     correct: "David Tepper"
   },
   {
-    question: "What was the Panthers' record in their first season?",
+    question: "What was the Panthers record in their first season?",
     answers: ["12-4", "3-13", "7-9", "5-11"],
     correct: "7-9"
   },
@@ -101,11 +101,12 @@ start.addEventListener("click", function (setTime) {
       secondsLeft--;
       timeEl.textContent = "Time: " + secondsLeft;
 
-      if (secondsLeft === 0) {
+      if (secondsLeft <= 0) {
         clearInterval(timerInterval);
         endOfGame();
-      }
+      } 
     }, 1000);
+    
   }
   setTime();
 });
@@ -135,7 +136,18 @@ answerArea.appendChild(questionBtn);
 
 // checking the answer
 function answerChecker() {
-
+if(event.target.textContent === questions[randomNum].correct) {
+  score++;
+} else {
+  secondsLeft -= 5;
+}
+//removing the question from the array so it doesn't get repeated
+questions.splice(randomNum, 1);
+if(questions.length === 0) {
+  secondsLeft = 0;
+} else {
+  questionRandomizer();
+}
 }
 
 // what shows at the end of the game
