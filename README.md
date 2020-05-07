@@ -1,30 +1,20 @@
-# Panthers Quiz
+# PANTHERS QUIZ
 ****
-Lorem...
 
-## User Story
+# Deployed Application
+****
+link
+****
 
+# About
+****
 ```
-AS A coding bootcamp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
+The player has 30 seconds to answer as many questions as they can. Getting a question right adds one to the players score. Getting a question wrong removes 5 seconds from the timer. Everything is created with JavaScript, HTML & CSS.
 ```
+****
 
-## Acceptance Criteria
-
-```
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and score
-```
+# Screenshots
+****
 
 
 

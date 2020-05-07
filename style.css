@@ -18,7 +18,10 @@ display: block;
 .start {
     background-color: blue;
     color: white;
-    border-radius: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 1.5%;
+    border-color: black;
 }
 
 .time {
@@ -68,4 +71,20 @@ main {
 .endOfGame {
     flex-direction: column;
     padding: 1%;
+}
+
+.end-btn-div {
+    width: 50%;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.end-btn {
+    margin: .5em auto;
+    background-color: blue;
+    color: white;
+    border: black;
+    border-radius: 20px;
+    padding: 1.5%;
 }

@@ -35,6 +35,7 @@ welcome.style.display = "none";
 quizSpace.style.display = "flex";
 arrayReset();
 questionRandomizer();
+setTime();
 }
 
 //The array of questions
@@ -93,8 +94,7 @@ function arrayReset() {
   }
 }
 
-// creating a button event listener function
-start.addEventListener("click", function (setTime) {
+
   // creating a countdown that starts when button is clicked
   function setTime() {
     var timerInterval = setInterval(function () {
@@ -106,10 +106,8 @@ start.addEventListener("click", function (setTime) {
         endOfGame();
       } 
     }, 1000);
-    
   }
-  setTime();
-});
+ 
 
 // function for questions
 function questionRandomizer () {
@@ -166,5 +164,14 @@ endGame.appendChild(headingEnd);
 var userScore = document.createElement("h2");
 userScore.textContent = "Your score was: " + score;
 endGame.appendChild(userScore);
+// creating a play again button
+var endBtnDivEl = document.createElement("div");
+endBtnDivEl.classList.add("end-btn-div");
+endGame.appendChild(endBtnDivEl);
+var playAgainBtn = document.createElement("button");
+playAgainBtn.classList.add("end-btn");
+playAgainBtn.textContent = "Play Again";
+playAgainBtn.addEventListener("click", startGame);
+endBtnDivEl.appendChild(playAgainBtn);
 }
 
