@@ -1,8 +1,10 @@
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-h1, p {
+h1, p, h2 {
     text-align: center;
 }
 
@@ -52,4 +54,18 @@ a {
     outline: none;
     cursor: pointer;
     display: block;
+}
+
+main {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.endOfGame {
+    flex-direction: column;
+    padding: 1%;
 }

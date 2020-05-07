@@ -152,6 +152,19 @@ if(questions.length === 0) {
 
 // what shows at the end of the game
 function endOfGame() {
+endGame.style.display = "flex";
+quizSpace.style.display = "none"; // clearing out the display
+// Clearing out the timer and setting the seconds remaining to 0
+secondsLeft = 0;
+timeEl.textContent = "Timer:";
+// creating end game header
+var headingEnd = document.createElement("h1");
+headingEnd.textContent = "Quiz is over!";
+endGame.appendChild(headingEnd);
 
+// showing end score of user
+var userScore = document.createElement("h2");
+userScore.textContent = "Your score was: " + score;
+endGame.appendChild(userScore);
 }
 
